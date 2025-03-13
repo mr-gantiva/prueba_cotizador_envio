@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "codigo_ciudad_origen": 1,
+        "codigo_ciudad_destino": 4,
+        "alto": 10,
+        "ancho": 10,
+        "largo": 10,
+        "kilos": 5,
+        "rut_cliente": "13061694"
+    },
+    {
+        "id": 2,
+        "codigo_ciudad_origen": 2,
+        "codigo_ciudad_destino": 3,
+        "alto": 20,
+        "ancho": 15,
+        "largo": 30,
+        "kilos": 10,
+        "rut_cliente": "12345678"
+    }
+]

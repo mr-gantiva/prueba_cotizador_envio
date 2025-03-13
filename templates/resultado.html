@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de Cotización - Starken</title>
+</head>
+
+<body>
+    <h1>Resultado de Cotización</h1>
+    <p><strong>Ciudad de Origen:</strong> {{ nombre_origen }}</p>
+    <p><strong>Ciudad de Destino:</strong> {{ nombre_destino }}</p>
+
+    <h2>Tarifas Disponibles</h2>
+    <ul>
+        {% for tarifa in tarifas %}
+        <li>
+            <strong>Costo Total:</strong> {{ tarifa['costoTotal'] }}<br>
+            <strong>Días de Entrega:</strong> {{ tarifa['diasEntrega'] }}<br>
+            <strong>Tipo de Entrega:</strong> {{ tarifa['tipoEntrega']['descripcionTipoEntrega'] }}<br>
+            <strong>Tipo de Servicio:</strong> {{ tarifa['tipoServicio']['descripcionTipoServicio'] }}
+        </li>
+        <br>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Volver al formulario</a>
+</body>
+
+</html>
